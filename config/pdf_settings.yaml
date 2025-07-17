@@ -1,0 +1,29 @@
+# Configuración para generación de PDFs de paneles fotográficos
+# Llenar con valores correctos según el proyecto
+
+pdf_generation:
+  # Información del tramo
+  tramo: 'CABANACONDE'
+  tramo_full_name: 'EMP. R0405104 (CABANACONDE) A PTE. CABANACONDE - CHOCO - L.P. CASTILLA (KM 13+000)'
+
+  # Información de la unidad ejecutora
+  unidad_ejecutora: 'Instituto Vial Provincial Caylloma'
+
+  # Mes de ejecución (1-12)
+  mes_ejecutado: 5
+
+  # Configuración del PDF
+  output_dir: 'output/pdf_panels'
+  page_title: 'Anexo VI Panel fotográfico'
+
+  # Configuración de imágenes
+  supported_extensions: ['png', 'jpg', 'jpeg']
+  photo_keys: ['before', 'during1', 'during2', 'after']
+  photo_labels:
+    [' 01 (antes).-', ' 02 (durante).-', ' 03 (durante).-', ' 04 (después).-']
+
+  # Configuración de layout
+  margin: 20 # pt
+  padding: 5 # pt
+  caption_height: 12 # pt
+  table_scale: 0.72

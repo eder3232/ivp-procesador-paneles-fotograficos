@@ -1,0 +1,35 @@
+# Configuraciones del Procesador de Paneles Fotográficos
+
+# Configuraciones de LLM
+llm:
+  provider: 'openai'
+  api_key_env: 'OPENAI_APIKEY'
+  model: 'gpt-4o-mini' # Modelo mejorado para mayor precisión
+  temperature: 0
+  max_tokens: 150 # Reducido porque respuestas serán más cortas
+  timeout: 30
+  validation:
+    enabled: true
+    max_retries: 3
+    fallback_model: 'gpt-3.5-turbo'
+
+# Configuraciones de archivos
+files:
+  input_pdf: 'src/data/panel_fotografico_corregido_cabanaconde.pdf'
+  temp_dir: 'temp'
+  output_images: 'output/images'
+  output_data: 'output/processed_data'
+  config_dir: 'config'
+
+# Configuraciones de procesamiento
+processing:
+  min_images_per_page: 4
+  max_images_per_page: 5
+  min_image_size: 10000 # bytes
+  encoding: 'utf-8'
+
+# Configuraciones de cache
+cache:
+  enabled: true
+  directory: '.cache'
+  cleanup_on_exit: true

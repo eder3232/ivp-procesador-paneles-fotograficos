@@ -1,25 +1,9 @@
-# Created by https://www.toptal.com/developers/gitignore/api/firebase,python
-# Edit at https://www.toptal.com/developers/gitignore?templates=firebase,python
-
-### Firebase ###
-.idea
-**/node_modules/*
-**/.firebaserc
-
-### Firebase Patch ###
-.runtimeconfig.json
-.firebase/
-
-### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
 
-# C extensions
-*.so
-
-# Distribution / packaging
+# C distribution / packaging
 .Python
 build/
 develop-eggs/
@@ -167,19 +151,33 @@ cython_debug/
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#  and can be added to the global gitignore or merged into this file.  For a more nuclear
-#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#.idea/
+#  be added to the global gitignore or merged into this project gitignore.  For a PyCharm
+#  project, it is recommended to include the following files:
+#  .idea/
+#  *.iml
+#  *.ipr
+#  *.iws
 
-### Python Patch ###
-# Poetry local configuration file - https://python-poetry.org/docs/configuration/#local-configuration
-poetry.toml
+# Project specific
+temp/
+output/
+# *.pdf
+*.log
 
-# ruff
-.ruff_cache/
+# Cache directories
+.cache/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
-# LSP config files
-pyrightconfig.json
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
-# End of https://www.toptal.com/developers/gitignore/api/firebase,python
+# OS
+.DS_Store
+Thumbs.db

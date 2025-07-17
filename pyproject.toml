@@ -1,18 +1,29 @@
 [project]
 name = "procesador-paneles-fotograficos"
 version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
+description = "Procesador de PDFs con extracción de imágenes y texto"
 requires-python = ">=3.12"
 dependencies = [
-    "openai>=1.96.0",
+    "pymupdf>=1.26.3",
     "pdfplumber>=0.11.7",
     "pillow>=11.3.0",
     "pydantic>=2.11.7",
-    "pymupdf>=1.26.3",
     "python-dotenv>=1.1.1",
     "pyyaml>=6.0.2",
+    "openai>=1.96.0",
     "requests>=2.32.4",
     "rich>=14.0.0",
     "tqdm>=4.67.1",
+    "reportlab>=4.4.2",
+    "PyPDF2>=3.0.0",
+    "pdf2image>=1.17.0",
+    "opencv-python>=4.9.0",
+    "tenacity>=8.2.0",
 ]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+cache_dir = ".cache"
+
+[tool.mypy]
+cache_dir = ".cache/mypy"

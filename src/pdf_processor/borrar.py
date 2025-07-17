@@ -1,0 +1,18 @@
+cargas_trabajo_en_blanco = [
+    "MR101-Limpieza de Calzada",
+    "MR102-Bacheo",
+    "MR103-Desquinche",
+    "MR104-Remoción de Derrumbes",
+    "MR201-Limpieza de Cunetas",
+    "MR202-Limpieza de Alcantarillas",
+    "MR203-Limpieza de Badén",
+    "MR204-Limpieza de Zanjas de Coronación",
+    "MR205-Limpieza de Pontones",
+    "MR206-Encauzamiento Pequeños cursos Agua",
+    "MR301-Roce y limpieza",
+    "MR401-Conservación de Señales",
+    "MR501-Reforestación",
+    "MR601-Vigilancia y Control",
+    "MR701-Reparación de muros secos",
+    "MR702-Reparación de Pontones",
+]
